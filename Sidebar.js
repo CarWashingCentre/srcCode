@@ -15,6 +15,13 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
         </div>
 
         <ul className='sidebar-list'>
+
+        <li className='sidebar-list-item'>
+                <a href="">
+                    <BsFillGrid3X3GapFill className='icon'/> Home
+                </a>
+            </li>
+
             <li className='sidebar-list-item'>
                 <a href="">
                     <BsGrid1X2Fill className='icon'/> Dashboard
@@ -50,6 +57,7 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                     <BsFillGearFill className='icon'/> Profile
                 </a>
             </li>
+            
         </ul>
     </aside>
   )
