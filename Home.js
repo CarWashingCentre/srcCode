@@ -33,7 +33,6 @@ function Home() {
       </span>
     </button> */}
 
-
                 <h1>5</h1>
             </div>
             <div onClick={()=>alert("Hello")} className='card'>
