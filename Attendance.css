@@ -1,0 +1,56 @@
+.c1{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.divadd{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+text-align: center;
+padding: 10px;
+border: 2px solid grey;
+border-radius: 10px;
+width: 70%;
+height: fit-content;
+}
+
+.dateinput{
+    background-color:#e0dcdc;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 10px;
+}
+
+.attd-table{
+    border: 1px solid black;
+    width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  padding: 10px;
+}
+th{
+    background-color: #e0dcdc;
+  text-align: center;
+  padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+.buttonclass{
+ background-color: rgb(24, 155, 13);
+ color: white;
+ padding: 10px 20px;
+ border: solid;
+ border-Radius: 7px;
+ cursor: pointer;
+ margin-Top: 10px;
+  }
