@@ -37,11 +37,11 @@ const AttendanceSheet = () => {
     const printableData = filteredEmployees.map((Employee) => ({
       name: Employee.name,
       attendance: Employee.attendance.includes(selectedDate) ? 'Present' : 'Absent',
+     
     }));
- 
    
     const printableText = printableData
-      .map((Employee) => `${Employee.name},${Employee.attendance}`)
+      .map((Employee) => `${selectedDate},${Employee.name},${Employee.attendance}`)
       .join('\n');
 
     // Create a data URL for downloading the printable data
@@ -63,11 +63,14 @@ const generateAttendanceData = () => {
       `${student.name}: ${student.attendance}`
     )).join('\n');
     return (
+        <div>
+            <h3>Attendance Report for {selectedDate}</h3>
         <table className="attd-table">
           <thead>
             <tr>
             <th>Employee ID</th>
               <th>Employee Name</th>
+              <th>Date</th>
               <th>Attendance</th>
             </tr>
           </thead>
@@ -76,11 +79,13 @@ const generateAttendanceData = () => {
               <tr key={index}>
                   <td>{Employee.id}</td>
                 <td>{Employee.name}</td>
+                <td>{selectedDate}</td>
                 <td>{Employee.attendance}</td>
               </tr>
             ))}
           </tbody>
         </table>
+        </div>
       );
   };
 
