@@ -1,0 +1,28 @@
+/* testimonial.css */
+.testimonial-slider .testimonial p {
+  font-size: 1rem; /* Default font size */
+  line-height: 1.5rem;
+}
+
+.testimonial-slider .testimonial h6 {
+  font-size: 1.25rem; /* Default font size */
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonial-slider .testimonial p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .testimonial-slider .testimonial h6 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .testimonial-slider .testimonial img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover;
+  }
+}
